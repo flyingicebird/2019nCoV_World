@@ -244,7 +244,7 @@ def get_year_chart(year: str):
         .set_global_opts(
             title_opts=opts.TitleOpts(
                 title="" +
-                      str(year) + "全球主要国家（感染超过300例）NCP实时动态",
+                      str(year) + "全球主要国家(除中国外感染超过300例)NCP实时动态",
                 subtitle="",
                 pos_left="center",
                 pos_top="top",
@@ -289,7 +289,7 @@ def get_year_chart(year: str):
         .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
         .set_global_opts(
             title_opts=opts.TitleOpts(
-                title="全球主要国家NCP实时动态(单位: 百人)", pos_left="72%", pos_top="5%"
+                title="全球主要国家(除中国外)NCP实时动态(单位: 百人)", pos_left="72%", pos_top="5%"
             )
         )
     )
